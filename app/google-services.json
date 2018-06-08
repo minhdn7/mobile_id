@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "474393337664",
+    "firebase_url": "https://mobile-id-e777b.firebaseio.com",
+    "project_id": "mobile-id-e777b",
+    "storage_bucket": "mobile-id-e777b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474393337664:android:8064395d64bc371d",
+        "android_client_info": {
+          "package_name": "mobileid.vnpt.vnptmobileid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474393337664-jocrb9kqpg4mia52b3gn90igh8aqj42q.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "474393337664-jocrb9kqpg4mia52b3gn90igh8aqj42q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY2zwY65OOsW4AdwNFT99P_CXtY3YHC7Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

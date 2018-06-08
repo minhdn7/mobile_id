@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ln_bottom_menu"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:paddingRight="16dp"
+        android:paddingBottom="80dp"
+        android:orientation="vertical">
+        <!--danh sách chứng thư-->
+        <LinearLayout
+            android:id="@+id/ln_list_cert"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="Danh sách chứng thư"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_cert"/>
+        </LinearLayout>
+
+        <!--Thêm mới chứng thư-->
+        <LinearLayout
+            android:id="@+id/ln_create_cert"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="Thêm mới chứng thư"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_add_2"/>
+        </LinearLayout>
+
+        <!--gia hạn chứng thư-->
+        <LinearLayout
+            android:id="@+id/ln_upgrade_cert"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="Gia hạn chứng thư"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_upgrade"/>
+        </LinearLayout>
+
+        <!--thanh toán chứng thư-->
+        <LinearLayout
+            android:id="@+id/ln_pay_cert"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="Thanh toán chứng thư"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_pay"/>
+        </LinearLayout>
+
+        <!--Cấu hình-->
+        <LinearLayout
+            android:id="@+id/ln_setting"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="Cấu hình"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_setting"/>
+        </LinearLayout>
+
+        <!--Thông tin-->
+        <LinearLayout
+            android:id="@+id/ln_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="Thông tin"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_info"/>
+        </LinearLayout>
+
+        <!--Thoát-->
+        <LinearLayout
+            android:id="@+id/ln_exit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:text="Thoát"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_exit"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        app:srcCompat="@mipmap/ic_add" />
+</RelativeLayout>

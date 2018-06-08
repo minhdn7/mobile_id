@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+        <!--Chưa có chứng thư-->
+        <LinearLayout
+            android:id="@+id/lo_no_cert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_thongtindiem_chuadn"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_gioithieu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_20dp"
+                            android:text="@string/str_no_cert"
+                            android:textSize="16sp" />
+
+
+                        <Button
+                            android:id="@+id/btnAddCert"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_btn_tap_2"
+                            android:paddingLeft="@dimen/padding_32dp"
+                            android:paddingRight="@dimen/padding_32dp"
+                            android:text="@string/str_add_cert"
+                            android:textColor="@color/textColorWhite" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+        <!--// end-->
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/buttonMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true"
+            fab:menu_backgroundColor="#ccffffff"
+            android:layout_alignParentEnd="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bt_list_cert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="@string/str_list_cert" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bt_create_cert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="@string/str_add_cert" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bt_upgrade_cert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="@string/str_upgrade_cert" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bt_pay_cert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="@string/str_pay_cert" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bt_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="@string/str_setting" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="@string/str_info" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bt_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_edit"
+                fab:fab_size="mini"
+                fab:fab_label="@string/str_exit" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</android.support.constraint.ConstraintLayout>
